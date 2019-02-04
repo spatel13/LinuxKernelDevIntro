@@ -1,0 +1,10 @@
+[    0.000000] Linux version 4.12.10+ (spatel13@421VM) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ) #1 SMP Wed Sep 13 15:24:31 EDT 2017
+[    0.000000] This is spatel32's kernel
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.12.10+ root=UUID=14f90f12-7ba8-446b-b5a8-bb4f423c3f70 ro quiet splash
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] XSAVE consistency problem, dumping leaves
+[    0.000000] ------------[ cut here ]------------
+[    0.000000] WARNING: CPU: 0 PID: 0 at arch/x86/kernel/fpu/xstate.c:596 fpu__init_system_xstate+0x2a0/0x74f

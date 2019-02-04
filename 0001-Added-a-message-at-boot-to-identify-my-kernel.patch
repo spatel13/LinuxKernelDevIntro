@@ -1,0 +1,24 @@
+From ec335f228514bbaedcfb5b703a8cc267268c539f Mon Sep 17 00:00:00 2001
+From: Sahil Patel <spatel32@umbc.edu>
+Date: Wed, 13 Sep 2017 16:45:45 -0400
+Subject: [PATCH] Added a message at boot to identify my kernel
+
+---
+ arch/x86/kernel/setup.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/arch/x86/kernel/setup.c b/arch/x86/kernel/setup.c
+index 36646f1..ce03191 100644
+--- a/arch/x86/kernel/setup.c
++++ b/arch/x86/kernel/setup.c
+@@ -881,6 +881,7 @@ void __init setup_arch(char **cmdline_p)
+ 	 */
+ 	__flush_tlb_all();
+ #else
++	printk("This is spatel32's kernel");
+ 	printk(KERN_INFO "Command line: %s\n", boot_command_line);
+ #endif
+ 
+-- 
+2.7.4
+

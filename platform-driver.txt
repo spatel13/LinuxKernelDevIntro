@@ -1,0 +1,3 @@
+/proc/interrupts is a system file that stores the different interrupt call that occur throught the system. It contains details about what program/device caused the interrupt or the frequency/number of times it happened.
+The name of the new platform driver is CS421 HW1, as shown by /proc/interrupts
+As of writing this, the platform driver has not caused any interrupts but has simply been inserted into the list of interrupts that the system will look out for.
